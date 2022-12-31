@@ -25,7 +25,9 @@ ul {
   width: 1200px;
   margin: 0 auto;
 }
-
+.line {
+  border-bottom: 1px solid #ececec;
+}
 /*--------------- navigation bar / header ---------------*/
 
 .header {
@@ -95,7 +97,6 @@ ul {
 .post-header {
   text-align: center;
   background-color: #2f303a;
-  border-top: 1px solid #ececec;
 }
 .post-header.section {
   padding: 200px 0;
@@ -202,13 +203,29 @@ ul {
 
 /*--------------- portfolio.html ---------------*/
 
-.portfolio-link-portfolio {
+.link.index__agency-link.navbar__content {
   color: #2196f3;
 }
-.portfolio-link-main {
+.link.portfolio__agency-link.navbar__content {
   color: default;
 }
-.buttons {
+.link.portfolio__portfolio-link.navbar__content {
+  color: #2196f3;
+}
+.link.index__portfolio-link.navbar__content {
+  color: default;
+}
+.button-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+button:not(:last-child) {
+  margin-right: 8px;
+}
+.button {
+  padding: 0;
   background-color: #f5f4fa;
   color: #212121;
   cursor: pointer;
@@ -220,9 +237,17 @@ ul {
   font-size: 16px;
   line-height: 1.625;
 }
-.buttons:hover {
+.button:hover {
   background-color: #2196f3;
   color: white;
+}
+.filter-results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  /* border: 1px solid red; */
 }
 .picture {
   margin: 0;
@@ -232,16 +257,18 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin: 20px 24px 4px 24px;
 }
-.main-content .result {
+.filter-result {
   border: 1px solid #eeeeee;
   width: 370px;
   cursor: pointer;
 }
-.main-content .descriptions {
+.description {
   color: #757575;
   font-size: 16px;
   line-height: 1.875;
+  margin: 0 24px 20px 24px;
 }
 
 /*--------------- footer ---------------*/

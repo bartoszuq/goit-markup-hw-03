@@ -12,56 +12,61 @@
     />
     <link rel="stylesheet" href="css/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <title>goit-markup-hw-03 - Portfolio</title>
   </head>
   <body>
-    <header class="header container">
-      <nav class="navbar">
-        <a href="index.html" class="logo logo--primary navbar__content"
-          ><span class="logo-design--color">Web</span>Studio</a
-        >
-        <ul>
-          <li>
-            <a href="#agency" class="link agency-link-portfolio navbar__content"
-              >Agencja</a
+    <div class="line">
+      <header class="header container">
+        <div class="navbar__links">
+          <a href="index.html" class="logo logo--primary navbar__content"
+            ><span class="logo-design--color">Web</span>Studio</a
+          >
+
+          <nav class="navbar">
+            <ul class="navbar__items">
+              <li class="navbar__item">
+                <a
+                  href="index.html"
+                  class="link portfolio__agency-link navbar__content"
+                  >Agencja</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="portfolio.html"
+                  class="link portfolio__portfolio-link navbar__content"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a href="#footer" class="link navbar__content">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="contacts">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact email"
+              >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a
-              href="portfolio.html"
-              class="link portfolio-link-portfolio navbar__content"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a href="#footer" class="link footer-link-portfolio navbar__content"
-              >Kontakt</a
-            >
+          <li class="contact__item">
+            <a href="tel:48111111111" class="contact tel">+48 111 111 111</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact email"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:48111111111" class="contact tel">+48 111 111 111</a>
-        </li>
-      </ul>
-    </header>
+      </header>
+    </div>
     <main class="container section">
-      <div class="filter">
-        <button type="button" class="buttons">Wszystkie</button>
-        <button type="button" class="buttons">Strony</button>
-        <button type="button" class="buttons">Aplikacje</button>
-        <button type="button" class="buttons">Dizajn</button>
-        <button type="button" class="buttons">Marketing</button>
+      <div class="button-filter">
+        <button type="button" class="button">Wszystkie</button>
+        <button type="button" class="button">Strony</button>
+        <button type="button" class="button">Aplikacje</button>
+        <button type="button" class="button">Dizajn</button>
+        <button type="button" class="button">Marketing</button>
       </div>
-      <div class="results main-content">
-        <ul>
-          <li class="result">
+      <div class="main-content">
+        <ul class="filter-results">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio1.jpg"
@@ -69,9 +74,9 @@
               />
               <figcaption class="picture__heading">Technocrack</figcaption>
             </figure>
-            <p class="descriptions">Strona internetowa</p>
+            <p class="description">Strona internetowa</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio2.jpg"
@@ -81,9 +86,9 @@
                 Grafika New Orlean vs Golden Star
               </figcaption>
             </figure>
-            <p class="descriptions">Dizajn</p>
+            <p class="description">Dizajn</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio3.jpg"
@@ -93,9 +98,9 @@
                 Restauracja Seafood
               </figcaption>
             </figure>
-            <p class="descriptions">Aplikacja</p>
+            <p class="description">Aplikacja</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio4.jpg"
@@ -103,9 +108,9 @@
               />
               <figcaption class="picture__heading">Projekt Prime</figcaption>
             </figure>
-            <p class="descriptions">Marketing</p>
+            <p class="description">Marketing</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio5.jpg"
@@ -113,9 +118,9 @@
               />
               <figcaption class="picture__heading">Projekt Boxes</figcaption>
             </figure>
-            <p class="descriptions">Aplikacja</p>
+            <p class="description">Aplikacja</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio6.jpg"
@@ -125,9 +130,9 @@
                 Inspiration has no Borders
               </figcaption>
             </figure>
-            <p class="descriptions">Strona internetowa</p>
+            <p class="description">Strona internetowa</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio7.jpg"
@@ -137,9 +142,9 @@
                 Magazyn Limited Edition
               </figcaption>
             </figure>
-            <p class="descriptions">Dizajn</p>
+            <p class="description">Dizajn</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio8.jpg"
@@ -147,9 +152,9 @@
               />
               <figcaption class="picture__heading">Projekt LAB</figcaption>
             </figure>
-            <p class="descriptions">Marketing</p>
+            <p class="description">Marketing</p>
           </li>
-          <li class="result">
+          <li class="filter-result">
             <figure class="picture">
               <img
                 src="images/portfolio/portfolio9.jpg"
@@ -157,7 +162,7 @@
               />
               <figcaption class="picture__heading">Growing Business</figcaption>
             </figure>
-            <p class="descriptions">Aplikacja</p>
+            <p class="description">Aplikacja</p>
           </li>
         </ul>
       </div>
