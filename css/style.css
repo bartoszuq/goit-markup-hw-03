@@ -88,6 +88,10 @@ ul {
 .contacts .contact:hover {
   color: #2196f3;
 }
+.link:focus,
+.contacts .contact:focus {
+  color: #2196f3;
+}
 .section {
   padding: 94px 0px;
 }
@@ -138,7 +142,7 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-.skill__description {
+.skill__picture__description {
   font-size: 14px;
   line-height: 1.714;
   color: #757575;
@@ -241,6 +245,10 @@ button:not(:last-child) {
   background-color: #2196f3;
   color: white;
 }
+.button:focus {
+  background-color: #2196f3;
+  color: white;
+}
 .filter-results {
   display: flex;
   justify-content: center;
@@ -249,26 +257,26 @@ button:not(:last-child) {
 
   /* border: 1px solid red; */
 }
-.picture {
-  margin: 0;
+.img--block {
+  display: block;
+}
+.picture__info {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 .picture__heading {
   color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin: 20px 24px 4px 24px;
 }
 .filter-result {
-  border: 1px solid #eeeeee;
   width: 370px;
-  cursor: pointer;
 }
-.description {
+.picture__description {
   color: #757575;
   font-size: 16px;
   line-height: 1.875;
-  margin: 0 24px 20px 24px;
 }
 
 /*--------------- footer ---------------*/
