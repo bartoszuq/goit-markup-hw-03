@@ -4,7 +4,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: white;
   color: black;
-  max-width: 1600px;
   margin: 0 auto;
 }
 h1,
@@ -153,7 +152,7 @@ ul {
 }
 .about-us__items {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .our-team {
@@ -182,7 +181,6 @@ ul {
 }
 .about-us__item:not(:last-child),
 .our-team__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .about-us__heading,
@@ -271,7 +269,7 @@ button:not(:last-child) {
   line-height: 2;
 }
 .filter-result {
-  width: 370px;
+  width: auto;
 }
 .picture__description {
   color: #757575;
